@@ -1,0 +1,63 @@
+{
+    "root": {
+        "title":"ООО КБЭР \"Банк Казани\"",
+        "item":[ {
+            "department_id":"0",
+            "startDate":"16.07.2018 12:26",
+            "data": {
+                "currency":[ {
+                    "code":"USD",
+                    "description":"Курс USD",
+                    "buy":[ {
+                        "#text": "62.03", "@value": "1"
+                    }
+                    ],
+                    "sell":[ {
+                        "#text": "62.37", "@value": "1"
+                    }
+                    ],
+                    "cb":[ {
+                        "#text": "62.29", "@value": "1"
+                    }
+                    ]
+                }
+                ,
+                {
+                    "code":"GBP",
+                    "description":"Курс GBP",
+                    "sell":[ {
+                        "#text": "83.09", "@value": "1"
+                    }
+                    ],
+                    "buy":[ {
+                        "#text": "81.99", "@value": "1"
+                    }
+                    ],
+                    "cb":[ {
+                        "#text": "81.78", "@value": "1"
+                    }
+                    ]
+                }
+                ,
+                {
+                    "code":"EUR",
+                    "description":"Курс EUR",
+                    "sell":[ {
+                        "#text": "72.92", "@value": "1"
+                    }
+                    ],
+                    "buy":[ {
+                        "#text": "72.53", "@value": "1"
+                    }
+                    ],
+                    "cb":[ {
+                        "#text": "72.47", "@value": "1"
+                    }
+                    ]
+                }
+                ]
+            }
+        }
+        ]
+    }
+}

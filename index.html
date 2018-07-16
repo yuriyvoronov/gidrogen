@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Курс Доллара:</h2>
+	<h3>Покупка:</h3>
+	<span id="usd-rate-buy"></span>
+	<h3>Продажа:</h3>
+	<span id="usd-rate-sell"></span>
+	
+	<script>
+	var gjson ;
+	gjson = getJSON('data.json') ;
+	var obj = JSON.parse(gjson);
+	var usdBuy = obj.root.item[0].data.currency[0].buy[0]["#text"].toString();
+	var usdSell = obj.root.item[0].data.currency[0].sell[0]["#text"].toString();
+	document.getElementById("usd-rate-buy").innerText = usdBuy;
+	document.getElementById("usd-rate-sell").textContent = usdSell;
+	
+	function getJSON(url) {
+        var resp ;
+        var xmlHttp ;
+
+        resp  = '' ;
+        xmlHttp = new XMLHttpRequest();
+
+        if(xmlHttp != null)
+        {
+            xmlHttp.open( "GET", url, false );
+            xmlHttp.send( null );
+            resp = xmlHttp.responseText;
+        }
+
+        return resp ;
+    }
+</script>
+</body>
+</html>
